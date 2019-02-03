@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=0.68, minimum-scale=0.68, maximum-scale=0.68">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>俱乐部登录页</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<style>
+    html{font-size: 10px; height: 100%; -webkit-user-select:none;}
+    body{height:100%; background-color:#203D4B; font-size: 1.2rem;}
+    a,div,span{-webkit-tap-highlight-color:transparent;}
+    input, select{width: 130px; display: inline-block; background: none; border: none; color: #fff;}
+    input, select:focus { outline: none; } 
+    #alertVal{color: #000; border: 1px solid #ddd;}
+    
+    .logo{width: 300px; overflow: hidden; margin:0 auto; padding-top: 50px;}
+    .logo img{width: 100%;}
+    .clum_input{background-color: #292929; width: 300px; height: 45px; line-height: 45px; margin: 0 auto 10px; border-radius: 2px; border: 1px solid #191919;}
+    .clum_input>i{margin-left: 10px;}
+    .tel_block_txt{display: inline-block; color: #555; width: 100px; text-align: right; margin-left: -110px;}
+    .tel_block_txt>i{margin-left: 10px;}
+    select[name="tel_block"]{width: 118px; opacity: 0; border: none; color: #888; margin-left: 6px;}
+    .loginBtn{width: 300px; margin: 50px auto 0; display: block; height: 46px; line-height: 46px; font-size: 1.8rem;}
+</style>
+<!-- 强制login页面全屏 -->
+<script>
+    if (window != top) top.location.href = location.href;
+</script>
+</head>
+
+<body>
+<div class="logo"><img src="images/logo.png" alt=""></div>
+<div class="clum_input">
+    <i class="iconfont col_com4_1">&#xe615;</i>
+    <input type="text" placeholder="CardID" name="cardId" maxlength="6" onkeyup="this.value=this.value.replace(/\D/g,'')">
+</div>
+<div class="clum_input">
+    <i class="iconfont col_com4_1">&#xe615;</i>
+    <input type="text" placeholder="账号" name="tel" maxlength="20" >
+</div>
+<div class="clum_input">
+    <i class="iconfont col_com4_1">&#xe615;</i>
+    <input type="password" placeholder="密码" name="pwa">
+</div>
+<a href="javascript:;" class="loginBtn btn col_bg_com3">登 录</a>
+
+
+<script data-main="script/login" src="script/lib/requireJS_v2.3.5_m.js"></script><!-- js模块化加载 -->
+</body>
+</html>
