@@ -15,7 +15,7 @@ var Config = {
     ** time 2018.03.14
     */
     // Server_CM: '//'+ location.host +'/poker.cm/',
-    Server_CM: 'https://' + 'cm.46mp.com:9999' + '/poker.cm/',
+    Server_CM: 'http://localhost:3000/',
     /* 
     ** 牌型描述
     ** time 2018.06.12
