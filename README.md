@@ -3,7 +3,7 @@
 How it works
 ------------
 
-The app will serve all files from the `static` directory. All requests to endpoints that dont exist in that directory, are being proxied to the domain you specify in `server.js` file.
+The app will serve all files from the `static` directory. All requests to endpoints that dont exist in that directory, are being proxied to the URL you specify in `server.js` file.
 
 How to run
 ----------
