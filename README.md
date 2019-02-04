@@ -1,5 +1,10 @@
 A simple proxy for https://cm.46mp.com:9999/poker.cm
 
+How it works
+------------
+
+The app will serve all files from the `static` directory. All requests to endpoints that dont exist in that directory, are being proxied to https://cm.46mp.com:9999/poker.cm
+
 How to run
 ----------
 
